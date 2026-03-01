@@ -7,9 +7,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time
 
-GMAIL_USER = "demirbasak222@gmail.com"
-GMAIL_APP_PASSWORD = "haafjnleztcpsevm"
-SUBSCRIPTIONS_FILE = "veriler.json"
+GMAIL_USER = #...
+GMAIL_APP_PASSWORD = #...
+SUBSCRIPTIONS_FILE = "data.json"
 SENT_ANNOUNCEMENTS_FILE = "sent_announcements.json"
 WSDL_URL = "https://api.ibb.gov.tr/iett/UlasimDinamikVeri/Duyurular.asmx?wsdl"
 
@@ -32,7 +32,7 @@ def save_json_data(filename, data):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def send_email(receiver_email, subject, body):
-    if GMAIL_USER == "demirbasak222@gmail.com" or GMAIL_APP_PASSWORD == "haafjnleztcpsevm":
+    if GMAIL_USER == #... or GMAIL_APP_PASSWORD == #...:
         print("!!! UYARI: Lütfen dosyadaki GMAIL_USER ve GMAIL_APP_PASSWORD değişkenlerini güncelleyin.")
         return False
     try:
