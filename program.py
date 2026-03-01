@@ -11,13 +11,13 @@ WSDL_URL = 'https://api.ibb.gov.tr/iett/UlasimDinamikVeri/Duyurular.asmx?wsdl'
 VERI_DOSYASI = 'kullanicilar.json'
 
 
-GONDEREN_MAIL = "demirbasak222@gmail.com"
-GONDEREN_SIFRE = "haafjnleztcpsevm" 
-ALICI_MAIL = "demirbasak222@gmail.com"  
+GONDEREN_MAIL = #...
+GONDEREN_SIFRE = #... 
+ALICI_MAIL = #...  
 
 SMTP_SUNUCU = "smtp.gmail.com"
 SMTP_PORT = 587
-KONTROL_ARALIGI = 300  # Kontrol sıklığı 5 dakika
+KONTROL_ARALIGI = 300  
 
 
 
