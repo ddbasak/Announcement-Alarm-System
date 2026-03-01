@@ -11,11 +11,11 @@ WSDL_URL = 'https://api.ibb.gov.tr/iett/UlasimDinamikVeri/Duyurular.asmx?wsdl'
 
 SUBSCRIPTIONS_FILE = 'subscriptions.json'
 
-GONDEREN_MAIL = "demirbasak222@gmail.com" 
-GONDEREN_SIFRE = "haafjnleztcpsevm" 
+GONDEREN_MAIL = #... 
+GONDEREN_SIFRE = #... 
 SMTP_SUNUCU = "smtp.gmail.com"
 SMTP_PORT = 587
-KONTROL_ARALIGI = 900  # 15 dakika
+KONTROL_ARALIGI = 900  
 
 
 def clear_screen():
