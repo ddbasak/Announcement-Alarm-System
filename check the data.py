@@ -11,13 +11,10 @@ def tum_duyurulari_getir_ve_goster():
     print("İETT web servisinden güncel duyurular alınıyor...")
     
     try:
-        # Web servisine bağlanmak için bir istemci (client) oluşturulur.
-        # strict=False ayarı, WSDL tanımındaki bazı uyumsuzlukları tolere eder.
         settings = Settings(strict=False)
         client = Client(WSDL_URL, settings=settings)
         
         # Servisin GetDuyurular_json metodunu çağırarak veriyi al.
-        # Bu servis, duyuruları bir JSON metni olarak döndürür.
         print("Servis çağrılıyor...")
         json_yaniti = client.service.GetDuyurular_json()
         print("Yanıt alındı, veriler işleniyor...")
@@ -34,7 +31,7 @@ def tum_duyurulari_getir_ve_goster():
         
         # Her bir duyuruyu numaralandırarak ekrana yazdır.
         for i, duyuru in enumerate(duyurular, 1):
-            # .get() metodu, eğer anahtar bulunamazsa hata vermez, None döndürür.
+            
             hat = duyuru.get('HAT', 'Genel Duyuru')
             mesaj = duyuru.get('MESAJ', 'İçerik bulunamadı.')
             
